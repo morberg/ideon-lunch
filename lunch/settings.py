@@ -16,7 +16,7 @@ NEWSPIDER_MODULE = 'lunch.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'lunch (+http://www.yourdomain.com)'
+USER_AGENT = 'lunch (+https://github.com/morberg/ideon-lunch)'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
