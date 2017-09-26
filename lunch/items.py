@@ -10,5 +10,5 @@ import scrapy
 
 class LunchItem(scrapy.Item):
     # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
+    weekday = scrapy.Field()
+    courses = scrapy.Field()
