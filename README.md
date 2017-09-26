@@ -1,24 +1,15 @@
-# Warning, this project is not yet fit for public consumption
-It works for me, but it is a mess.
+# Create a calendar file with this week's menu
 
-Todo: create a scrapy pipelines that creates the .ics files.
+Currently only one menu crawler is implemented for the restaurant Ideon Edison.
 
-# Hämta veckans meny, skapa en .ics-fil och öppna i kalendern
+Run it with:
 
-Ta bort förra veckans meny:
+`scrapy crawl edison`
 
-`rm lunch.json`
+to create `edison.ics` which contains this week's menu as daily calendar entries 11:30-12:00. 
 
-Skapa en ny json-fil för varje restaurang (just nu enbart `edison`) med `scrapy`:
-
-`scrapy crawl edison -o lunch.json`
-
-Kör skript för att skapa filen `Ideon Edison.ics`:
-
-`./create-calendar-file.py`
-
-Och öppna i kalendern:
+Open the file with your preferred application:
 
 `open Ideon Edison.ics`
 
-Smaklig spis.
+Enjoy!
