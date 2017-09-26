@@ -1,6 +1,6 @@
 #!/usr/local/bin/python3
 import json
-import lunchcal
+from lunchcal.lunchcal import LunchCalendar
 from datetime import *; from dateutil.relativedelta import *
 
 def cal(restaurant='Ideon Edison'):
@@ -12,7 +12,7 @@ def cal(restaurant='Ideon Edison'):
         menu = json.load(f)
     lunch_calendar = LunchCalendar(restaurant)
     # First lunch_date is 11:30 on Monday of current week    
-    lunch_date = datetime.now().replace(hour=11,minute=30) - relativedelta(weekday=MO)
+    lunch_date = datetime.now().replace(hour=11,minute=30) + relativedelta(weekday=MO(-1))
     for daily_menu in menu:
         courses = ''
         for item in daily_menu['courses']:
