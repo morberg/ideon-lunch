@@ -10,7 +10,6 @@ class EdisonSpider(scrapy.Spider):
 
     def parse(self, response):
         weekdays = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday']
-        menu = {}
         for day in weekdays:
             yield {
                 'weekday': day,
