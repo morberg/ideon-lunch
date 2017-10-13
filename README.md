@@ -5,7 +5,7 @@ Run the crawler with:
 
 `scrapy crawl edison`
 
-to create `edison.ics` which will create this week's menu as daily calendar entries 11:30-12:00. 
+to create `edison.ics`. This week's daily courses will be calendar entries 11:30-12:00. 
 
 Open the file with your preferred calendar application:
 
