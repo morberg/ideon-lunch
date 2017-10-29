@@ -14,6 +14,7 @@ BOT_NAME = 'lunch'
 SPIDER_MODULES = ['lunch.spiders']
 NEWSPIDER_MODULE = 'lunch.spiders'
 
+FEED_EXPORT_ENCODING = 'utf-8'
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 USER_AGENT = 'lunch (+https://github.com/morberg/ideon-lunch)'
