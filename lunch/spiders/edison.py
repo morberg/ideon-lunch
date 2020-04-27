@@ -13,5 +13,5 @@ class EdisonSpider(scrapy.Spider):
         for day in weekdays:
             yield {
                 'weekday': day,
-                'courses': response.xpath('//div[@id=$val]/table//td[@class="course_description"]/p/text()', val=day).extract()
+                'courses': response.xpath('//div[@id=$val]/table//td[@class="course_description"]/p[1]/text()', val=day).getall()
             }
