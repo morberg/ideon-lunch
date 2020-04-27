@@ -23,7 +23,7 @@ class LunchPipeline(object):
     def process_item(self, item, spider):
         courses = ''
         for course in item['courses']:
-            courses = courses + course + '\n\n' 
+            courses = courses + course.replace(u'\xa0', u' ') + '\n\n' 
         self.cal.create_event(spider.restaurant, courses, self.lunch_date)        
         self.lunch_date = self.lunch_date + relativedelta(days=1)
         return item
