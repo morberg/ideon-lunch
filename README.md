@@ -40,3 +40,11 @@ Modify the file `lunch/spiders/<name>.py`:
 1. Add `restaurant` variable to class with the name of the restaurant
 2. Modify the `start_urls` variable
 2. Implement the `parse` method to yield `weekday` and `courses` for each day of the week
+
+## Fixing a broken restaurant
+
+```
+scrapy shell http://restaurangedison.se/lunch
+response.xpath('//div[@id=$val]/table//td[@class="course_description"]/p/text()', val='monday').extract()
+```
+and iterate.
