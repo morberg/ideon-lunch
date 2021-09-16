@@ -1,4 +1,14 @@
 # Create a calendar file with this week's menu
+## Fast food
+
+Run:
+
+`make lunch`
+
+This will run the crawler for Edison and then open the generated calendar file.
+
+## Recipe
+
 List available crawlers with `scrapy list`. Select the restaurant you want an .ics file for, e.g. `edison`.
 
 Run the crawler with:
