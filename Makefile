@@ -1,7 +1,7 @@
 lunch: edison
 
 edison:
-	scrapy crawl edison
+	. .venv/bin/activate && scrapy crawl edison
 	open edison.ics
 
 clean:
