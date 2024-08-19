@@ -4,5 +4,8 @@ edison:
 	. .venv/bin/activate && scrapy crawl edison
 	open edison.ics
 
+bricks:
+	. .venv/bin/activate && scrapy crawl bricks
+
 clean:
-	rm -f edison.ics
+	rm -f *.ics *.json
