@@ -1,11 +1,11 @@
 lunch: edison
 
 edison:
-	. .venv/bin/activate && scrapy crawl edison
+	uv run scrapy crawl edison
 	open edison.ics
 
 bricks:
-	. .venv/bin/activate && scrapy crawl bricks
+	uv run scrapy crawl bricks
 
 clean:
 	rm -f *.ics *.json
