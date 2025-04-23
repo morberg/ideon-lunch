@@ -18,8 +18,8 @@ class LunchPipeline(object):
     def open_spider(self, spider):
         spider.log("Open spider {} in LunchPipeline".format(spider.name))
         self.cal = LunchCalendar(spider.restaurant)
-        # First lunch_date is 11:30 on Monday of current week
-        self.lunch_date = datetime.now().replace(hour=11, minute=30) + relativedelta(
+        # First lunch_date is 12:00 on Monday of current week
+        self.lunch_date = datetime.now().replace(hour=12, minute=00) + relativedelta(
             weekday=MO(-1)
         )
 
